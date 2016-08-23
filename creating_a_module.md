@@ -1,4 +1,4 @@
-# Creating a Module
+# Creating a Nxus Module
 
 Nxus organizes functionality into modules, allowing reuse and logical packaging of related code.
 
