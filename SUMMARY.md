@@ -2,6 +2,9 @@
 
 * [Introduction](README.md)
 * [Getting Started](gettingstarted_md.md)
+  * Installing Nxus
+  * Creating an App
+  * 
 * [Nxus Concepts](nxusconcepts_md.md)
   * [Storage](storage.md)
   * [Routing](routingmd.md)
