@@ -4,7 +4,7 @@
 * [Getting Started](gettingstarted_md.md)
    * [Creating an App](creating_an_app.md)
    * [Installing Nxus](installing_nxus.md)
-   * Installing Modules
+   * [Installing Modules](installing_modules.md)
    * Adding functionality
 * [Nxus Concepts](nxusconcepts_md.md)
    * [Storage](storage.md)
