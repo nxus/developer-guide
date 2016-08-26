@@ -11,6 +11,7 @@
 * Users/Teams
 * Deployment Tips
 * Client-side JS
+* Workers and Pipelines
 * Guides/Boilerplate
    * Creating a web app
    * Creating an asynchronous worker
