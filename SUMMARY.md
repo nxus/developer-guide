@@ -5,7 +5,7 @@
 * [Nxus Concepts](nxusconcepts_md.md)
 * [Creating a Module](creating_a_module.md)
 * [Routing](routingmd.md)
-* Templating
+* [Templating](templating.md)
 * User Interfaces
 * Administration
 * Users/Teams
