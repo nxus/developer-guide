@@ -1,4 +1,4 @@
-# Nxus User Guide
+# Nxus Developer Guide
 
 This is the guide for using Nxus and developing Nxus applications and modules.
 
