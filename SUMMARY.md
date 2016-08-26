@@ -4,7 +4,7 @@
 * [Getting Started](gettingstarted_md.md)
 * [Nxus Concepts](nxusconcepts_md.md)
 * [Creating a Module](creating_a_module.md)
-* [Routing](routing.md)
+* [Routing](routingmd.md)
 * Templating
 * User Interfaces
 * Administration
