@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Getting Started](getting_started.md)
-* [Nxus Concepts](nxus_concepts.md)
+* [Nxus Concepts](nxusconcepts_md.md)
 * [Creating a Module](creating_a_module.md)
 * [Routing](routing.md)
 * Templating
@@ -12,11 +12,11 @@
 * Deployment Tips
 * Client-side JS
 * Guides/Boilerplate
-  * Creating a web app
-  * Creating an asynchronous worker
+   * Creating a web app
+   * Creating an asynchronous worker
 * Examples
-  * Routing
-  * Forms
-  * Users
-  * Pages
+   * Routing
+   * Forms
+   * Users
+   * Pages
 
