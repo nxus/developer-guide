@@ -8,6 +8,9 @@ Nxus is designed to be three things:
 * Modular: a library of common features and tools so you don't have to write it.
 * Flexible: install only what you need, no bloat.
 
+## About this Guide
+The best way to learn Nxus is to build a Nxus app. This guide will walk you through the basic steps of creating a web application from scratch using the core Nxus modules. By the end, you will have a good understand of how Nxus works and a solid foundation to explore more specialized topics like [building a Nxus module](/creating_a_module) and building [data processors]().
+
 ## Requirements
 In order to follow this guide, you'll need a few things first.
 
