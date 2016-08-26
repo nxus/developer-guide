@@ -1,11 +1,17 @@
 # Getting Started
 
-## Installing Nxus
+Welcome to Nxus! This getting started guide will show you how to create your first Nxus application.
 
-## Creating an app
+Nxus is designed to be three things:
 
-## Installing modules
+* Efficient: a well designed API that means you write fewer lines of code.
+* Modular: a library of common features and tools so you don't have to write it.
+* Flexible: install only what you need, no bloat.
 
-## Adding functionality
+## Requirements
+In order to follow this guide, you'll need a few things first.
 
-## Next steps
+1. NodeJS. Nxus requires Node v 6.4 or above.  You can download NodeJS from the [project page](http://www.nodejs.org) or via a tool like [homebrew](http://brew.sh).
+2. NPM. You'll need npm v 3.0 or above. This usually comes with NodeJS so no extra install necessary.
+3. Git. You probably already have this, but you'll want to have Git v 2.4 or above.
+4. A text editor.  We like [Sublime](http://www.sublimetext.com) but any text editor will do.
