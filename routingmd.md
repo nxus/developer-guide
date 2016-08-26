@@ -2,7 +2,11 @@
 
 ## Introduction
 
-## Installing the router
+## Setting up the router
+
+### Installation
+
+### Configuration
 
 ## Setting up a route
 
