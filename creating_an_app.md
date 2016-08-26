@@ -1,4 +1,4 @@
-# Creating an App
+# Creating a Web App
 First, we'll need to create a new folder to house our application. 
 
 ```
