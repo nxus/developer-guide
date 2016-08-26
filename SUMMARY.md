@@ -4,7 +4,8 @@
 * [Getting Started](gettingstarted_md.md)
   * Installing Nxus
   * Creating an App
-  * 
+  * Installing Modules
+  * Adding functionality
 * [Nxus Concepts](nxusconcepts_md.md)
   * [Storage](storage.md)
   * [Routing](routingmd.md)
@@ -12,14 +13,16 @@
   * [User Interfaces](user_interfaces.md)
   * Administration
   * Users/Teams
-  * Deployment Tips
+  * Permissions
   * Client-side JS
   * Workers and Pipelines
 * Developer Guides
-   * [Creating a Module](creating_a_module.md)
-   * Creating a Template
+   * [Creating a Nxus module](creating_a_module.md)
+   * Creating a template
    * Creating a web app
-   * Creating an asynchronous worker
+   * Creating a worker cluster
+   * Deployment & DevOps
+   * Coding Standards and Contribution Guidelines
 * Examples & Boilerplate
    * Routing
    * Forms
