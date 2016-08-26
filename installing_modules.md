@@ -5,11 +5,11 @@ Our app is pretty basic - it will start and load, but it doesn't do much else. S
 ## Router
 First, our web app will need web routes, so we will install the `nxus-router` module.
 
-```
+```bash
 > npm install nxus-router --save
 ```
 Then run 
-```
+```bash
 > npm start
 ```
 Now you'll see the console outputs some new messages
@@ -17,3 +17,6 @@ Now you'll see the console outputs some new messages
 ![Console with router messages](Screen Shot 2016-08-26 at 2.17.52 PM.png)
 
 Finally, navigate to `http://localhost:3001` in your web browser an you'll see a 404 page.
+
+## Web UI
+
