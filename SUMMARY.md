@@ -3,20 +3,21 @@
 * [Introduction](README.md)
 * [Getting Started](gettingstarted_md.md)
 * [Nxus Concepts](nxusconcepts_md.md)
-* [Creating a Module](creating_a_module.md)
-* [Storage](storage.md)
-* [Routing](routingmd.md)
-* [Templating](templating.md)
-* [User Interfaces](user_interfaces.md)
-* Administration
-* Users/Teams
-* Deployment Tips
-* Client-side JS
-* Workers and Pipelines
-* Guides/Boilerplate
+  * [Storage](storage.md)
+  * [Routing](routingmd.md)
+  * [Templating](templating.md)
+  * [User Interfaces](user_interfaces.md)
+  * Administration
+  * Users/Teams
+  * Deployment Tips
+  * Client-side JS
+  * Workers and Pipelines
+* Developer Guides
+   * [Creating a Module](creating_a_module.md)
+   * Creating a Template
    * Creating a web app
    * Creating an asynchronous worker
-* Examples
+* Examples & Boilerplate
    * Routing
    * Forms
    * Users
