@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Getting Started](getting_started.md)
+* [Getting Started](gettingstarted_md.md)
 * [Nxus Concepts](nxusconcepts_md.md)
 * [Creating a Module](creating_a_module.md)
 * [Routing](routing.md)
