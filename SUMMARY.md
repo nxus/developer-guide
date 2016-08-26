@@ -2,20 +2,20 @@
 
 * [Introduction](README.md)
 * [Getting Started](gettingstarted_md.md)
-  * Installing Nxus
-  * Creating an App
-  * Installing Modules
-  * Adding functionality
+   * [Installing Nxus](installing_nxus.md)
+   * Creating an App
+   * Installing Modules
+   * Adding functionality
 * [Nxus Concepts](nxusconcepts_md.md)
-  * [Storage](storage.md)
-  * [Routing](routingmd.md)
-  * [Templating](templating.md)
-  * [User Interfaces](user_interfaces.md)
-  * Administration
-  * Users/Teams
-  * Permissions
-  * Client-side JS
-  * Workers and Pipelines
+   * [Storage](storage.md)
+   * [Routing](routingmd.md)
+   * [Templating](templating.md)
+   * [User Interfaces](user_interfaces.md)
+   * Administration
+   * Users/Teams
+   * Permissions
+   * Client-side JS
+   * Workers and Pipelines
 * Developer Guides
    * [Creating a Nxus module](creating_a_module.md)
    * Creating a template
