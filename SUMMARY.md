@@ -2,8 +2,8 @@
 
 * [Introduction](README.md)
 * [Getting Started](gettingstarted_md.md)
-   * [Installing Nxus](installing_nxus.md)
    * Creating an App
+   * [Installing Nxus](installing_nxus.md)
    * Installing Modules
    * Adding functionality
 * [Nxus Concepts](nxusconcepts_md.md)
