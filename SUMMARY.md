@@ -6,7 +6,7 @@
 * [Creating a Module](creating_a_module.md)
 * [Routing](routingmd.md)
 * [Templating](templating.md)
-* User Interfaces
+* [User Interfaces](user_interfaces.md)
 * Administration
 * Users/Teams
 * Deployment Tips
