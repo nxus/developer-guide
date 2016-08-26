@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* Quick Start Recipes
 * [Getting Started](gettingstarted_md.md)
    * [Create a Web App](creating_an_app.md)
    * [Installing Nxus](installing_nxus.md)
