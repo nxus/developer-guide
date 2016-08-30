@@ -1,11 +1,7 @@
 # Nxus Concepts
 
 
-## Application
 
-### Events
-
-### File Structure
 
 ## Singletons
 
