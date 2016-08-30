@@ -61,3 +61,4 @@ export {MyModule as default, myModule}
 1. Document your overall module, any config and events, and all public methods.
 2. Use `this.log()` (and `this.log.debug()`, `this.log.info()` for outputting useful messages about your modules startup and behavior.
 2. Prefix private methods with underscore (`_name`) so they are not exposed by the proxy object.
+3. Put models in a sub-folder `models`, templates in a sub-folder `templates`, and tests in a sub-folder `tests`.
