@@ -196,7 +196,7 @@ class MyModule extends NxusModule {
 ### Step 4: Export your module
 
 Export your module class and a module proxy instance:
-```
+```javascript
 let myModule = MyModule.getProxy()
 export {MyModule as default, myModule}
 ```
