@@ -11,8 +11,10 @@ You don't have to do any explicit instantiate your module. When the Nxus applica
 ## Module Types
 There are two types of modules in Nxus: core modules and application modules.
 
+**Core Modules**
 Core modules are installed via npm and located in `./node_modules`. Core modules are always prefixed with `nxus-`.
 
+**Application Modules**
 Application modules are usually the modules you will create.  These are specific to your application, and located in the `./modules` directory.
 
 ## Accessing Modules in your code
