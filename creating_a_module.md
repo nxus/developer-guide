@@ -2,7 +2,7 @@
 
 Nxus organizes functionality into modules, allowing reuse and logical packaging of related code.
 
-Nxus Modules are ES6 classes, usually extending the core `NxusModule` class.
+Nxus Modules are ES6 [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), usually extending the core `NxusModule` class.
 
 Every module in Nxus is a singleton, meaning there is only ever one running instance of the module in the application at a time.  Modules in Nxus generally extend the `NxusModule` base class from the `nxus-core` package.
 
