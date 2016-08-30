@@ -4,9 +4,9 @@ Welcome to Nxus! This getting started guide will show you how to create your fir
 
 Nxus is designed to be three things:
 
-* Efficient: a well designed API that means you write fewer lines of code.
-* Modular: a library of common features and tools so you don't have to write it.
-* Flexible: install only what you need, no bloat.
+* **Efficient**: a well designed API that means you write fewer lines of code.
+* **Modular**: a library of common features and tools so you don't have to write it.
+* **Flexible**: install only what you need, no bloat.
 
 ## About this Guide
 The best way to learn Nxus is to build a Nxus app. This guide will walk you through the basic steps of creating a web application from scratch using the core Nxus modules. By the end, you will have a good understand of how Nxus works and a solid foundation to explore more specialized topics like [building a Nxus module](/creating_a_module) and building [data processors]().
