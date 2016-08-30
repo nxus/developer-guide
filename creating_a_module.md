@@ -39,7 +39,7 @@ import {moduleName} from '../ModuleName'
 
 As discussed in [Nxus Core Concepts](), everything in Nxus returns a [Promise](http://bluebirdjs.com/docs/api/new-promise.html).  When accessing or calling other modules, you can always assume that return values are wrapped in a promise and will resolve or throw a catchable error.
 
-Likewise, because Modules are managed by the Application, you don't need to worry about loading order or race conditions when calling methods on other modules: all methods are guaranteed to be called at the correct time in the application boot cycle.
+Because Modules are managed by the Application, you don't need to worry about loading order or race conditions when calling methods on other modules: all methods are guaranteed to be called at the correct time in the application boot cycle.
 
 > Read more about the [Nxus dispatching system]() and [application boot cycle]() to see how it works under the hood.
 
