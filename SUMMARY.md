@@ -8,6 +8,7 @@
    * [Installing Modules](installing_modules.md)
    * Adding functionality
 * [Nxus Concepts](nxusconcepts_md.md)
+   * Application
    * [Storage](storage.md)
    * [Routing](routingmd.md)
    * [Templating](templating.md)
