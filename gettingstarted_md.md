@@ -14,7 +14,7 @@ The best way to learn Nxus is to build a Nxus app. This guide will walk you thro
 ## Requirements
 In order to follow this guide, you'll need a few things first.
 
-1. NodeJS. Nxus requires Node v 6.4 or above.  You can download NodeJS from the [project page](http://www.nodejs.org) or via a tool like [homebrew](http://brew.sh).
-2. NPM. You'll need npm v 3.0 or above. This usually comes with NodeJS so no extra install necessary.
-3. Git. You probably already have this, but you'll want to have Git v 2.4 or above.
-4. A text editor.  We like [Sublime](http://www.sublimetext.com) but any text editor will do.
+1. **NodeJS**. Nxus requires Node v 6.4 or above.  You can download NodeJS from the [project page](http://www.nodejs.org) or via a tool like [homebrew](http://brew.sh).
+2. **NPM**. You'll need npm v 3.0 or above. This usually comes with NodeJS so no extra install necessary.
+3. **Git**. You probably already have this, but you'll want to have Git v 2.4 or above.
+4. **A text editor**.  We like [Sublime](http://www.sublimetext.com) but any text editor will do.
