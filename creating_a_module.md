@@ -40,19 +40,24 @@ class MyModule extends NxusModule {
   }
 }
 ```
-Define any default configuration (which will be written to user's application config file), and use config to extract user-overridable behavior:
+Define any default configuration, and use config to extract user-overridable behavior:
 ```
 class MyModule extends NxusModule {
   _defaultConfig() {
     return {key: "Value"}
   }
   my_route(req, res) {
+    if (this.config.key) {}
   }
 ```
-
+Export your module class and a module proxy instance:
+```
+let myModule = MyModule.getProxy()
+export {MyModule as default, myModule}
+```
 
 ## Best Practices for Modules
 
 1. Document your overall module, any config and events, and all public methods.
 2. Use `this.log()` (and `this.log.debug()`, `this.log.info()` for outputting useful messages about your modules startup and behavior.
-2. Use underscores for private methods `_name` so they are not exposed to the proxy object.
+2. Prefix private methods with underscore (`_name`) so they are not exposed by the proxy object.
