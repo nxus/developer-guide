@@ -28,7 +28,7 @@ You'll also likely want:
 
 * A persistent database (MongoDB is one of the defaults) 
 
-## Resources
+## Other Resources
 
 There are a few common resources for Nxus to be aware of:
 
