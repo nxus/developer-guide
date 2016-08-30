@@ -1,14 +1,6 @@
 # Nxus Concepts
 
 
+## Everything is a promise
 
-
-## Singletons
-
-## Modules
-
-## Configuration
-
-### RC file (.nxusrc)
-
-### ENV variables
+## Modules/Singletons
