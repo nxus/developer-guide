@@ -24,7 +24,7 @@ In order to run Nxus applications, you'll need the following:
 * NodeJS v 6.4 or above
 * NPM v 3.0 or above
 
-Optionally, you'll likely want:
+You'll also likely want:
 
 * A persistent database (MongoDB is one of the defaults) 
 
