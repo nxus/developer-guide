@@ -21,7 +21,7 @@
    * Workers and Pipelines
 * Developer Guides
    * [Creating a Nxus module](creating_a_module.md)
-   * Porting a Nxus 3 module to Nxus 4
+   * [Porting a Nxus 3 module to Nxus 4](porting_a_nxus_3_module_to_nxus_4.md)
    * Creating a template
    * Creating a web app
    * Creating a worker cluster
