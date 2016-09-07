@@ -103,6 +103,7 @@ application.on.calledWith('myEvent')
 To test modules, you can import and replace methods with Sinon spys.  For example, to test a route was called:
 
 ```javascript
+import {myModule} from '../'
 import {router} from 'nxus-router'
 import sinon from 'sinon'
 
