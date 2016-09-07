@@ -67,7 +67,7 @@ If you are using [templates]() or [models]() in your module, you will want to cr
 ```
 
 ### Configuration
-The Nxus Application [configuration system]() is automatically made available to your module via the `config` property and `_defaultConfig()` private method.
+The Nxus Application [configuration system]() is automatically made available to your module via the `config` property and `_defaultConfig()` and `_userConfig()` private methods.
 
 Define any default configuration, and use `config` to extract user-overridable behavior:
 
@@ -76,11 +76,36 @@ class MyModule extends NxusModule {
   constructor() {
     super()
     
-    console.log(this.config.key) // 'value'
+    console.log(this.config.key) // 'Value'
+    console.log(this.config.visibleKey) // 'Value'
   }
   
   _defaultConfig() {
     return {key: "Value"}
+  }
+  
+  _userConfig() {
+    return {visibleKey: "Value"} 
+  }
+}
+```
+
+#### User Configuration
+
+User configuration is exposed in the `.nxusrc` file automatically, using the JSON friendly version of your module name.  If you have defined a `_userConfig()` method of:
+
+```javascript
+  _userConfig() {
+    return {visibleKey: "Value"} 
+  }
+```
+
+You will have a corresponding entry created in the `.nxusrc` file
+
+```json
+{
+  "my-module": {
+    "visibleKey": "Value"
   }
 }
 ```
