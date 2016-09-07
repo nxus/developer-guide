@@ -96,7 +96,7 @@ import {application} from 'nxus-core'
 When the `NODE_ENV` is set to `test`, the application is the familiar `TestApp` instance.
 
 ```javascript
-application.on.calledWith('myEvent')
+application.on.calledWith('myEvent').should.be.true
 ```
 
 ### Modules
