@@ -59,7 +59,7 @@ class MyModule extends NxusModule {
 
 ### Default Configuration
 
-If you want to use and write a default configuration to the `.nxusrc` file (useful for exposing user configurable options), override the `NxusModule._defaultConfig()` private method.
+If you want to set a default configuration object, override the `NxusModule._defaultConfig()` private method.
 
 ```javascript
 import {application as app, NxusModule} from 'nxus-core'
@@ -72,6 +72,25 @@ class MyModule extends NxusModule {
   
   _defaultConfig() {
     return {some: 'option'}
+  }
+}
+```
+
+### User Configuration
+
+If you want to use and write a user visible configuration option to the `.nxusrc` file , override the `NxusModule._userConfig()` private method.
+
+```javascript
+import {application as app, NxusModule} from 'nxus-core'
+
+class MyModule extends NxusModule {
+  constructor() {
+    super()
+    console.log(this.config) // {some: 'option'}
+  }
+  
+  _userConfig() {
+    return {some: 'option'} // in .nxusrc, shows up as {'my-module': {'some': 'option'}}
   }
 }
 ```
