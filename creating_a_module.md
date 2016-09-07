@@ -77,7 +77,7 @@ class MyModule extends NxusModule {
     super()
     
     console.log(this.config.key) // 'Value'
-    console.log(this.config.visibleKey) // 'Value'
+    console.log(this.config.visibleKey) // 'Value' and entry in .nxusrc
   }
   
   _defaultConfig() {
