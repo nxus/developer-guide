@@ -80,7 +80,7 @@ class MyModule extends NxusModule {
 
 Instead of an application level logger, each module has its own logger in a separate output namespace.  Use `this.log` instead of `app.log`. The same log-level methods are also avaialble (`debug`, `info`, etc).
 
-To view the logs, or filter, you can set the `DEBUG` environment variable.  We use the npm `debug` library, so read about all the options.
+To view the logs, or filter, you can set the `DEBUG` environment variable.  We use the npm `debug-logger` library, so [read about all the options](https://www.npmjs.com/package/debug-logger).
 
 ## Testing
 
