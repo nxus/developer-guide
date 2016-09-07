@@ -84,3 +84,39 @@ To view the logs, or filter, you can set the `DEBUG` environment variable.  We u
 
 ## Testing
 
+Testing modules in Nxus 4 is much simpler than in previous versions.  In order to test cross module functionality, you can use the built-in TestApp and Sinon to create mocks and spys.
+
+### Application
+To test `application` calls, all you need to do is import the application as usual.
+
+```javascript
+import {application} from 'nxus-core'
+```
+
+When the `NODE_ENV` is set to `test`, the application is the familiar `TestApp` instance.
+
+```javascript
+application.on.calledWith('myEvent')
+```
+
+### Modules
+To test modules, you can import and replace methods with Sinon spys.  For example, to test a route was called:
+
+```javascript
+import {router} from 'nxus-router'
+import sinon from 'sinon'
+
+describe("Setup", () => {
+  var instance
+  
+  before(() => {
+    router.route = sinon.spy()
+    instance = new MyModule()
+  })
+  
+  it("should call the router", () => {
+    router.route.calledWith("/my-route").should.be.true
+  })
+})
+```
+
