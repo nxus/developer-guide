@@ -2,11 +2,13 @@
 
 Nxus Themes are collections of templates used to create the visual elements of a web interface.
 
-Themes are mostly defined by a common convention described in this guide: Themes are just Nxus Modules that define templates using a common pattern.
+Themes are mostly defined by a common convention described in this guide: Themes are just Nxus Modules that define templates using a common pattern.  There are no hard requirements for the structure of a theme, instead we recommend using the structure described below for the benefit of developers - everything should be defined in similar locations for all Nxus themes.
 
 ## Assumptions
 
 All themes and partials in Nxus are built using the [Bootstrap 3.0](www.getbootstrap.com) HTML/CSS framework. To get the best results, and minimize the amount of new styling your theme as to do, build your theme CSS and HTML using Bootstrap as well.
+
+You'll also want to make sure you've read the docs for [Modules](), [Templating]() and [Routing]() in Nxus.
 
 ## Anatomy of a Theme
 
@@ -20,6 +22,10 @@ Generally, a Nxus Theme is composed of four things: layouts, partials, assets an
 ### Default Theme
 
 The `nxus-web` module defines a default theme which includes boilerplate versions of the layouts and partials described below.  Because these default templates exist, you only need to define the specific files you'd like to customize.  If you don't define any of the base templates, the defaults will be used automatically.
+
+You can browse the source of the default theme, and use it as an example for your theme.
+
+https://github.com/nxus/web/tree/master/src/modules/web-theme-default
 
 ### Templating Engine
 
@@ -109,8 +115,76 @@ The bare template doesn't include navs, footers, etc:
 
 ## Partials
 
-There 
+There are four common partials you will always want to define for your theme.
+
+### head.ejs
+
+This contains the `<head>` portion of your page, including any scripts, styles and metadata.  Generally, the `head` partial will also render the title.  The best practice is to use the page title and the siteName `app.config` variable:
+
+```
+<title><%- typeof title != 'undefined' ? title+" | " : "" %> <%- typeof siteName != 'undefined' ? siteName : 'Nxus' %></title>
+```
+
+### nav.ejs
+
+This will contain the main navigation for your app.  Generally this is included at the top of the page.
+
+### scripts.ejs
+
+The `scripts` partial should include all your theme-defined scripts, as well as render the `included-scripts` partial. `included-scripts` injects other modules' client facing JS into the page.
+
+```
+   <script src="/assets/js/my-script.js"></script>
+   <%- render('included-scripts') %>
+```
+
+### footer.ejs
+
+The `footer` partial contains the common page footer that will appear on every page.
 
 ## Assets
+Generally, assets fall into three folders:
 
-## 
+* **images**: your theme image assets
+* **js**: your theme javascript assets
+* **css**: your theme stylesheets
+
+However, you can add additional asset folders as required by your theme (a `/assets/fonts` folder for example).
+
+## Theme Module
+
+The theme module register the layouts, partials and assets with Nxus, making them accessible to other modules.  Generally your theme module will look like:
+
+```javascript
+import {NxusModule} from 'nxus-core'
+
+import {templater} from 'nxus-templater'
+import {router} from 'nxus-router'
+
+class Theme extends NxusModule {
+  constructor(app) {
+    super(app)
+
+    // Add the assets folder as a static route
+    router.staticRoute('/assets', __dirname+'/assets')
+
+    // Add the partials (Note: partials should be defined with no wrapping template)
+    templater.replace().templateDir(__dirname+'/partials')
+    
+    // Add the root layouts: default and bare
+    templater.replace().template(__dirname+'/layouts/default.ejs')
+    templater.replace().template(__dirname+'/layouts/bare.ejs')
+    
+    // Add the page layout, which inherits the default layout (is wrapped in on render)
+    templater.replace().template(__dirname+'/layouts/page.ejs', 'default')
+
+    // Add in any template variables for all templates.
+    templater.on('renderContext', () => {
+      return {siteName: app.config.siteName}
+    })
+  }
+}
+
+var theme = Theme.getProxy()
+export {Theme as default, theme}
+```
