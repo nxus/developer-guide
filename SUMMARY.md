@@ -12,7 +12,7 @@
    * [Modules](modules.md)
    * [Storage](storage.md)
    * [Routing](routingmd.md)
-   * [Templating](templating.md)
+   * [Themes & Template](templating.md)
    * [User Interfaces](user_interfaces.md)
    * Administration
    * Users/Teams
@@ -22,7 +22,7 @@
 * Developer Guides
    * [Creating a Nxus module](creating_a_module.md)
    * [Porting a Nxus 3 module to Nxus 4](porting_a_nxus_3_module_to_nxus_4.md)
-   * [Creating a template](creating_a_template.md)
+   * [Creating a theme](creating_a_template.md)
    * Creating a web app
    * Creating a worker cluster
    * Deployment & DevOps
