@@ -1,2 +1,2 @@
-# Creating a template
+# Creating a theme
 
