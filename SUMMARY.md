@@ -10,7 +10,7 @@
 * [Nxus Concepts](nxusconcepts_md.md)
    * [Application](application.md)
    * [Modules](modules.md)
-   * Testing
+   * [Testing](testing.md)
    * [Storage](storage.md)
    * [Routing](routingmd.md)
    * [Themes & Template](templating.md)
