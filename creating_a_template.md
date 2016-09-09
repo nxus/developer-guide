@@ -57,7 +57,7 @@ Layouts define the structure of a type of page. All Nxus themes will generally w
 
 ### default.ejs
 
-The `default.ejs` generally looks like this:
+The `default.ejs` layout generally looks something like this:
 
 ```ejs
 <!DOCTYPE html>
@@ -74,8 +74,42 @@ The `default.ejs` generally looks like this:
 </html>
 ```
 
+### page.ejs
+
+The `page.ejs` extends the default layout, but adds a title and body section, as well as renders the `flash` template for flash messages.
+
+```ejs
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <%- render('flash', {req}) %>
+      <% if(typeof title != "undefined") { %>
+      <h1 class="page-header"><%- title %></h1>
+      <% } %>
+      <%- content %>
+    </div>
+  </div>
+</div>
+```
+
+### bare.ejs
+
+The bare template doesn't include navs, footers, etc:
+
+```ejs
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/head.ejs') %>
+  <body>
+    <%- content %>
+    <%- include('../partials/scripts.ejs') %>
+  </body>
+</html>
+```
 
 ## Partials
+
+There 
 
 ## Assets
 
